@@ -1,0 +1,48 @@
+
+.introBody{
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+    position: relative;
+    padding-top: 250px;
+}
+.animatedBlock{
+    
+    width: 45%;
+    height: 15%;
+    margin: 0 auto;
+    /* border: 3px solid white; */
+    animation: fral 15s linear infinite;
+}
+.productBlock{
+    
+    padding: 10px 0;
+    width: 50%;
+    background: #000;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    align-items: center;
+    color: white;
+    border: 10px solid white;
+    animation: tarsfral 15s linear infinite;
+    
+    
+}
+
+.productBlock img{
+    width: 40%;
+}
+.productBlock >div>h3{
+    margin-top: 10px;
+}
+@keyframes fral {
+    100%{
+        transform: rotate(360deg);
+    }
+}
+@keyframes tarsfral {
+    100%{
+        transform: rotate(-360deg);
+    }
+}

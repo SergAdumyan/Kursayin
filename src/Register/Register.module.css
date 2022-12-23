@@ -1,0 +1,132 @@
+.registerBody {
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 10s linear infinite;
+  height: 100vh;
+  padding-top: 120px;
+}
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.registerBlock {
+  position: relative;
+  backdrop-filter: blur(15px);
+  background-color: rgba(255, 255, 255, 0.2);
+  width: 30%;
+  /* height: 500px; */
+  border-radius: 10px;
+  margin: auto;
+  padding: 0 30px 60px 30px;
+}
+
+.registerLogo {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.userLogo {
+  margin-top: -50px;
+  opacity: 0.3;
+  font-size: 100px;
+  color: white;
+}
+.registerLogo p {
+  font-size: 50px;
+  font-weight: bold;
+  color: white;
+  opacity: 0.5;
+}
+
+.registerInputsBlock {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.registerInputsLogin:nth-child(1) {
+  justify-content: start;
+  gap: 5px;
+}
+.registerInputsLogin:nth-child(2) {
+  gap: 5px;
+}
+.registerInputsLogin {
+  display: flex;
+
+  align-items: center;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 8px;
+  padding: 10px 20px;
+}
+.inputUserLogo {
+  font-size: 2vw;
+  color: rgba(0, 0, 0, 0.493);
+}
+.registerInputsLogin input {
+  font-size: 20px;
+  background: rgba(0, 0, 0, 0);
+  border: none;
+  outline: none;
+  color: white;
+  width: 75%;
+}
+.registerInputsLogin input::placeholder {
+  font-weight: bold;
+  color: white;
+  opacity: 0.5;
+}
+
+.okOrCancel {
+  margin-top: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  
+}
+.okOrCancel button {
+  cursor: pointer;
+  width: 30%;
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0.411);
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  color: rgb(80, 80, 80);
+  transition: 0.3s linear;
+}
+.okOrCancel button:hover {
+    box-shadow: 1px 1px 47px -13px rgba(0,0,0,0.77);
+    letter-spacing: 3px;
+    color: initial;
+    
+  }
+.Cancel {
+  font-size: 20px;
+  color: red;
+}
+.isRight {
+  font-size: 20px;
+  color: rgb(0, 161, 0);
+}
+
+.resetPass{
+    margin-top: 10px;
+   
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    float: right;
+}
